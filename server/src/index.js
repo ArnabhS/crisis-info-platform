@@ -7,6 +7,7 @@ import connectDB from './config/db.js';
 
 import alertRoutes from './routes/alert.routes.js';
 import newsRoutes from './routes/news.routes.js'
+import redzoneRoutes from './routes/redzone.routes.js'
 
 dotenv.config();
 const app = express();
@@ -23,6 +24,7 @@ app.use(express.json());
 
 app.use('/api/alerts', alertRoutes(io));
 app.use('/api/news', newsRoutes);
+app.use('/api/red-zones', redzoneRoutes);
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
