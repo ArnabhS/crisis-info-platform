@@ -4,12 +4,13 @@ import NewsFeed from './pages/News';
 import Alerts from './pages/Alerts';
 import HelplinePage from "./pages/HelplineNumbers";
 
+
 export default function App() {
   return (
     
       <div className="bg-gray-900">
         
-       
+      
          <BrowserRouter>
        <Navbar />
           <Routes>
