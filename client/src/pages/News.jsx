@@ -12,7 +12,7 @@ export default function NewsFeed() {
     axios
       .get(`${BASE_URL}/api/news`)
       .then(res => {
-        console.log("Fetched News:", res.data);
+        
         setNews(res.data);
         setLoading(false);
       })
