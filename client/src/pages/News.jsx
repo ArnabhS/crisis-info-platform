@@ -23,7 +23,7 @@ export default function NewsFeed() {
   }, []);
 
   return (
-    <div className=" text-white min-h-screen p-6 max-w-[80%] mx-auto">
+    <div className=" text-white min-h-screen p-6 md:max-w-[80%] mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center">📰 Top News</h2>
 
       {loading ? (
